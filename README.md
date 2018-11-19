@@ -17,7 +17,31 @@ supporting the following file formats:
 
 ## Installation
 
-`[sudo] npm install -g facebook-chat-download`  
+Due an error while attempting to publish on [npmjs](https://www.npmjs.com),
+in order to install it, you must clone the repo and create manually a script file:
+
+- Clone the github repo:
+
+`git clone https://github.com/a-bentofreire/facebook-chat-download`  
+
+- Create script file:
+
+On Linux/MacOS:
+
+```shell
+  cd facebook-chat-download && npm install && cd ..
+  printf '#!/usr/bin/env bash\nnode -- facebook-chat-download/main.js $@\n' > facebook-chat-download
+  chmod +x facebook-chat-download
+```
+
+  On Windows:
+
+```shell
+  cd facebook-chat-download
+  npm install
+  cd ..
+  echo 'node facebook-chat-download\main.js %*' > facebook-chat-download.bat
+```
 
 ## Usage
 
