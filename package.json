@@ -1,0 +1,53 @@
+{
+  "name": "facebook-chat-download",
+  "uuid": "29166f51-6c3c-42c9-99e9-7216a9525ddd",
+  "displayName": "facebook-chat-download",
+  "description": "Facebook Chat Messages Downloader",
+  "version": "0.1.0",
+  "publisher": "a-bentofreire",
+  "keywords": [
+    "facebook",
+    "chat",
+    "messenger",
+    "download"
+  ],
+  "readme": "README.md",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Alexandre Bento Freire",
+    "email": "devpieces@a-bentofreire.com",
+    "url": "https://github.com/a-bentofreire"
+  },
+  "license": "MIT+uuid",
+  "engines": {
+    "node": "*"
+  },
+  "bin": {
+    "facebook-chat-download": "main.js"
+  },
+  "homepage": "https://devpieces.a-bentofreire.com/products/facebook-chat-download",
+  "bugs": "https://github.com/a-bentofreire/facebook-chat-download/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a-bentofreire/facebook-chat-download"
+  },
+  "main": "main.js",
+  "dependencies": {
+    "@types/node": "^10.12.9",
+    "commander": "^2.19.0",
+    "facebook-chat-api": "^1.6.0",
+    "moment": "^2.22.2",
+    "prompts": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/moment": "^2.13.0",
+    "@types/prompts": "^1.1.1"
+  },
+  "optionalDependencies": {},
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "test": "private/test.sh"
+  }
+}

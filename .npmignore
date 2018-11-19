@@ -1,0 +1,8 @@
+.git/**
+node_modules/**
+private/**
+*.ts
+*.js.map
+ts*.json
+.editorconfig
+.gitignore
