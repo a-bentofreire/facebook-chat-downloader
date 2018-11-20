@@ -21,6 +21,7 @@ const chatApi = require("facebook-chat-api");
 
 const DEF_FIELD_NAMES = ['date', 'sender', 'message'];
 const DEF_DATE_FORMAT = 'YYYY-MM-DD HH:mm:ss';
+const VERSION = '0.1.3';
 
 
 parseCommandLine();
@@ -37,7 +38,7 @@ async function parseCommandLine() {
   }
 
   program
-    .version('0.1.0')
+    .version(VERSION)
     // login
     .option('-e, --email [email]', 'email')
     .option('-p, --password [password]', 'password')

@@ -1,14 +1,14 @@
 # Description
 
-`facebook-chat-downloader` is an unofficial facebook chat message downloader command line utility.  
-It's designed to simplify the retrieval of the chat messages for a list of users.  
+`facebook-chat-downloader` is an unofficial facebook chat messages downloader command line utility.  
+It's designed to simplify the retrieval of the chat messages of a list of users.  
 It uses [facebook-chat-api](https://www.npmjs.com/package/facebook-chat-api) library to retrieve the data from facebook.
   
-`facebook-chat-downloader` can login from email and password, if missing it will request a user prompt,
+`facebook-chat-downloader` can login from an email and password from command line options, user prompt,
 or from a state-file (generated if requested after the first successful login),
 allowing to connect multiple times without requesting multiple times the email/password.
 
-The file storage is done per chat name, where the filename has the symbols removed the chat name,
+The file storage is done per chat name, usually the username, where the filename is the chat name with the symbols removed,
 supporting the following file formats:
 
 - raw `json` - the data is stored as it's retrieved from the `facebook-chat-api`.
@@ -29,7 +29,7 @@ Where the options are:
 | ------------- | ------------- |------------- |  
 |-e|--email|email<br><i>if email and input state file aren't present, it will request by user prompt</i>|
 |-p|--password|password<br><i>if password and input state file aren't present, it will request by user prompt</i>|
-|-s|--state-file|state filename<br><i>if `-S` isn't present, it will read state from this file<br>replacing the need of a password</i>|
+|-s|--state-file|state filename<br><i>if `-S` isn't present, it will read state from this file<br>replacing the need of an email and password</i>|
 |-S|--write-state-file|<i>if present, it will write the state to this file after successful login</i>|
 |-t|--threads-file|chat threads filename<br><i>if `-T` isn't present, it will read threads from this file<br>replacing the need of an extra request</i>|
 |-T|--write-threads-file|if present, it will write the threads file|
@@ -67,9 +67,9 @@ with the message before the sender.
 
 ## Caveats
 
-To prevent connection timeouts, facebook-chat-downloader downloads 50 messages packages,
-and uses a recursive function to retrieve the next ones.
-If a certain chat has too many messages, it can reach a stack overflow.
+To prevent connection timeouts, facebook-chat-downloader downloads a 50 messages package,
+and then it uses a recursive function to retrieve the next one package.
+If a certain chat has too many messages, it could reach a stack overflow.
 
 ## License
 

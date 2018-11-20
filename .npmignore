@@ -6,3 +6,4 @@ private/**
 ts*.json
 .editorconfig
 .gitignore
+ver-test.pl
