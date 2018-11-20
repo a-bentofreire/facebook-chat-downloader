@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 // uuid: 0e32887b-d7ba-4d28-91a5-55e69d00686d
 
