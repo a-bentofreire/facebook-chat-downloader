@@ -1,10 +1,10 @@
-## Description
+# Description
 
-`facebook-chat-download` is an unofficial facebook chat message downloader command line utility.  
+`facebook-chat-downloader` is an unofficial facebook chat message downloader command line utility.  
 It's designed to simplify the retrieval of the chat messages for a list of users.  
 It uses [facebook-chat-api](https://www.npmjs.com/package/facebook-chat-api) library to retrieve the data from facebook.
   
-`facebook-chat-download` can login from email and password, if missing it will request a user prompt,
+`facebook-chat-downloader` can login from email and password, if missing it will request a user prompt,
 or from a state-file (generated if requested after the first successful login),
 allowing to connect multiple times without requesting multiple times the email/password.
 
@@ -17,35 +17,11 @@ supporting the following file formats:
 
 ## Installation
 
-Due an error while attempting to publish on [npmjs](https://www.npmjs.com),
-in order to install it, you must clone the repo and create manually a script file:
-
-- Clone the github repo:
-
-`git clone https://github.com/a-bentofreire/facebook-chat-download`  
-
-- Create script file:
-
-On Linux/MacOS:
-
-```shell
-  cd facebook-chat-download && npm install && cd ..
-  printf '#!/usr/bin/env bash\nnode -- facebook-chat-download/main.js $@\n' > facebook-chat-download
-  chmod +x facebook-chat-download
-```
-
-  On Windows:
-
-```shell
-  cd facebook-chat-download
-  npm install
-  cd ..
-  echo 'node facebook-chat-download\main.js %*' > facebook-chat-download.bat
-```
+`[sudo] npm install -g facebook-chat-downloader`
 
 ## Usage
 
-`facebook-chat-download [options]`
+`facebook-chat-downloader [options]`
   
 Where the options are:  
 
@@ -69,29 +45,29 @@ Where the options are:
 
 ## Examples
 
-`facebook-chat-download -n 'My lunch group' -n 'Miss 王' -R`
+`facebook-chat-downloader -n 'My lunch group' -n 'Miss 王' -R`
   
 It will prompt for the email and password associated with your facebook account,  
 and store the chats in the files: `my-lunch-group.raw.json` and `miss-王.raw.json`.
   
-`facebook-chat-download -e myfbemail@northpole.com -s state.json -S -O chats`
+`facebook-chat-downloader -e myfbemail@northpole.com -s state.json -S -O chats`
   
 It will prompt for the password, store the state in `state.json` after successful login,  
 and store all the chats in the folder `chats` in json format.
   
-`facebook-chat-download -s state.json -t threads.json -T -n 'Hiking (weekend)' -F txt`
+`facebook-chat-downloader -s state.json -t threads.json -T -n 'Hiking (weekend)' -F txt`
   
 It will read the login from `state.json`, write the thead list in `threads.json`,  
 download one chat and store it in text format on the file `hiking-weekend.txt`.
   
-`facebook-chat-download -t threads.json -c -n 'My lunch group' -F txt -N date -N message -N sender`
+`facebook-chat-downloader -t threads.json -c -n 'My lunch group' -F txt -N date -N message -N sender`
   
 It will read the previously stored `my-lunch-group.raw.json` and convert it into text format,  
 with the message before the sender.
 
 ## Caveats
 
-To prevent connection timeouts, facebook-chat-download downloads 50 messages packages,
+To prevent connection timeouts, facebook-chat-downloader downloads 50 messages packages,
 and uses a recursive function to retrieve the next ones.
 If a certain chat has too many messages, it can reach a stack overflow.
 

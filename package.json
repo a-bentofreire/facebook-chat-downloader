@@ -1,9 +1,9 @@
 {
-  "name": "facebook-chat-download",
+  "name": "facebook-chat-downloader",
   "uuid": "29166f51-6c3c-42c9-99e9-7216a9525ddd",
-  "displayName": "facebook-chat-download",
+  "displayName": "facebook-chat-downloader",
   "description": "Facebook Chat Messages Downloader",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "a-bentofreire",
   "keywords": [
     "facebook",
@@ -23,13 +23,13 @@
     "node": "*"
   },
   "bin": {
-    "facebook-chat-download": "main.js"
+    "facebook-chat-downloader": "main.js"
   },
-  "homepage": "https://devpieces.a-bentofreire.com/products/facebook-chat-download",
-  "bugs": "https://github.com/a-bentofreire/facebook-chat-download/issues",
+  "homepage": "https://devpieces.a-bentofreire.com/products/facebook-chat-downloader",
+  "bugs": "https://github.com/a-bentofreire/facebook-chat-downloader/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-bentofreire/facebook-chat-download"
+    "url": "https://github.com/a-bentofreire/facebook-chat-downloader"
   },
   "main": "main.js",
   "dependencies": {
