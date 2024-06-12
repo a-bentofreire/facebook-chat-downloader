@@ -73,8 +73,8 @@ If a certain chat has too many messages, it could reach a stack overflow.
 
 ## License
 
-[MIT License+uuid License](https://github.com/a-bentofreire/uuid-licenses/blob/master/MIT-uuid-license.md)
+MIT License
 
 ## Copyrights
 
-(c) 2018 Alexandre Bento Freire
+(c) 2018-2024 Alexandre Bento Freire

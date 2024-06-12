@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 "use strict";
-// uuid: 0e32887b-d7ba-4d28-91a5-55e69d00686d
-
 // ------------------------------------------------------------------------
-// Copyright (c) 2018 Alexandre Bento Freire. All rights reserved.
-// Licensed under the MIT License+uuid License. See License.txt for details
+// Copyright (c) 2018-2024 Alexandre Bento Freire. All rights reserved.
+// Licensed under the MIT License.
 // ------------------------------------------------------------------------
 
 import * as sysFs from "fs";
@@ -21,7 +19,7 @@ const chatApi = require("facebook-chat-api");
 
 const DEF_FIELD_NAMES = ['date', 'sender', 'message'];
 const DEF_DATE_FORMAT = 'YYYY-MM-DD HH:mm:ss';
-const VERSION = '0.1.3';
+const VERSION = '0.1.4';
 
 
 parseCommandLine();

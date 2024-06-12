@@ -36,10 +36,9 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-// uuid: 0e32887b-d7ba-4d28-91a5-55e69d00686d
 // ------------------------------------------------------------------------
-// Copyright (c) 2018 Alexandre Bento Freire. All rights reserved.
-// Licensed under the MIT License+uuid License. See License.txt for details
+// Copyright (c) 2018-2024 Alexandre Bento Freire. All rights reserved.
+// Licensed under the MIT License.
 // ------------------------------------------------------------------------
 var sysFs = require("fs");
 var sysPath = require("path");
@@ -52,7 +51,7 @@ var chatApi = require("facebook-chat-api");
 // ------------------------------------------------------------------------
 var DEF_FIELD_NAMES = ['date', 'sender', 'message'];
 var DEF_DATE_FORMAT = 'YYYY-MM-DD HH:mm:ss';
-var VERSION = '0.1.3';
+var VERSION = '0.1.4';
 parseCommandLine();
 // ------------------------------------------------------------------------
 //                               Command Line
