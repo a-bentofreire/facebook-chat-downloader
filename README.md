@@ -1,6 +1,6 @@
 # Description
 
-`facebook-chat-downloader` is an unofficial facebook chat messages downloader command line utility.  
+[facebook-chat-downloader](https://www.devpieces.com/projects/facebook-chat-downloader) is an unofficial facebook chat messages downloader command line utility.  
 It's designed to simplify the retrieval of the chat messages of a list of users.  
 It uses [facebook-chat-api](https://www.npmjs.com/package/facebook-chat-api) library to retrieve the data from facebook.
   
@@ -73,8 +73,8 @@ If a certain chat has too many messages, it could reach a stack overflow.
 
 ## License
 
-MIT License
+MIT
 
 ## Copyrights
 
-(c) 2018-2024 Alexandre Bento Freire
+(c) 2018-2024 [Alexandre Bento Freire](https://www.a-bentofreire.com)

@@ -51,7 +51,7 @@ var chatApi = require("facebook-chat-api");
 // ------------------------------------------------------------------------
 var DEF_FIELD_NAMES = ['date', 'sender', 'message'];
 var DEF_DATE_FORMAT = 'YYYY-MM-DD HH:mm:ss';
-var VERSION = '0.1.4';
+var VERSION = '0.1.5';
 parseCommandLine();
 // ------------------------------------------------------------------------
 //                               Command Line

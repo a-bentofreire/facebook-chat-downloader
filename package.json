@@ -2,7 +2,7 @@
   "name": "facebook-chat-downloader",
   "displayName": "facebook-chat-downloader",
   "description": "Facebook Chat Messages Downloader",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "publisher": "a-bentofreire",
   "keywords": [
     "facebook",
@@ -24,7 +24,7 @@
   "bin": {
     "facebook-chat-downloader": "main.js"
   },
-  "homepage": "https://devpieces.a-bentofreire.com/products/facebook-chat-downloader",
+  "homepage": "https://www.devpieces.com/projects/facebook-chat-downloader",
   "bugs": "https://github.com/a-bentofreire/facebook-chat-downloader/issues",
   "repository": {
     "type": "git",
