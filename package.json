@@ -2,7 +2,7 @@
   "name": "facebook-chat-downloader",
   "displayName": "facebook-chat-downloader",
   "description": "Facebook Chat Messages Downloader",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "publisher": "a-bentofreire",
   "keywords": [
     "facebook",
@@ -14,7 +14,7 @@
   "readmeFilename": "README.md",
   "author": {
     "name": "Alexandre Bento Freire",
-    "email": "devpieces@a-bentofreire.com",
+    "email": "devtoix@a-bentofreire.com",
     "url": "https://github.com/a-bentofreire"
   },
   "license": "MIT",
@@ -24,11 +24,11 @@
   "bin": {
     "facebook-chat-downloader": "main.js"
   },
-  "homepage": "https://www.devpieces.com/projects/facebook-chat-downloader",
+  "homepage": "https://www.devtoix.com/en/projects/facebook-chat-downloader",
   "bugs": "https://github.com/a-bentofreire/facebook-chat-downloader/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/a-bentofreire/facebook-chat-downloader"
+    "url": "git+https://github.com/a-bentofreire/facebook-chat-downloader.git"
   },
   "main": "main.js",
   "dependencies": {
